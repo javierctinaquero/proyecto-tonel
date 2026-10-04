@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Proyecto Tonel</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tonel">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0D1421">
+<style>
+  :root{color-scheme:dark}
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0D1421;color:#E5EBF4;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;text-align:center;padding:24px;box-sizing:border-box}
+  main{max-width:360px}
+  img{width:120px;height:120px;border-radius:28px}
+  h1{font-size:28px;margin:18px 0 6px}
+  p{color:#93A0B5;line-height:1.5;margin:0 0 20px}
+  a.btn{display:inline-block;background:#4BC28B;color:#0D1421;font-weight:700;text-decoration:none;padding:14px 22px;border-radius:14px}
+  small{display:block;margin-top:22px;color:#93A0B5;line-height:1.5}
+</style>
+</head>
+<body>
+<main>
+  <img src="icon-512.png" alt="Logo de Proyecto Tonel">
+  <h1>Proyecto Tonel</h1>
+  <p>Dieta, entreno, compra y progreso.</p>
+  <a class="btn" id="go" href="https://claude.ai/artifact/2KXfxeptKKhD5FM2L9yN5c">Abrir la app</a>
+  <small id="tip">Para tenerla con su logo en el móvil: en Safari, botón Compartir → «Añadir a pantalla de inicio».</small>
+</main>
+<script>
+  var APP = "https://claude.ai/artifact/2KXfxeptKKhD5FM2L9yN5c";
+  var standalone = window.navigator.standalone === true ||
+    (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches);
+  if (standalone) { location.replace(APP); }
+</script>
+</body>
+</html>
